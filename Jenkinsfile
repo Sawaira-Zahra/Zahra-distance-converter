@@ -5,7 +5,7 @@ pipeline {
       stage('Build') {
         steps {
           script {
-            dockerImage = docker.build("sawaira/distance-converter:${env.BUILD_ID}")
+            dockerImage = docker.build("sawaira/Distance-converter:${env.BUILD_ID}")
         }
     }
 }
